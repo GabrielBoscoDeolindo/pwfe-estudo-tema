@@ -59,8 +59,9 @@ export default function Camera({ onFotoTirada }) {
     };
 
     return (
-        <section className='flex flex-col items-center p-4'>
-            <div>
+        <section className='camera-box'>
+            <h2>Captura de Imagem por Camera</h2>
+            <div className='preview'>
                 {!foto ? (
                     <video ref={videoRef} autoPlay playsInline />
                 ) : (
